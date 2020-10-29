@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections;
 using UnityEngine;
 
 namespace Weapon
@@ -7,35 +7,34 @@ namespace Weapon
     {
         private readonly float _speed = 10f;
         private Rigidbody2D _rigid;
-        [SerializeField] private GameObject partialSys;
 
         private void Start()
         {
             _rigid = GetComponent<Rigidbody2D>();
+            StartCoroutine(DestroyedAfter(2));
         }
 
         private void Update()
         {
-            _rigid.velocity = (Vector2)transform.up * _speed;
+            _rigid.velocity = (Vector2) transform.up * _speed;
         }
-        
+
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("enemy"))
-            {
-                Explosion();
-            }
+            if (other.CompareTag("enemy")) Explosion();
         }
 
-        void Explosion()
+        private void Explosion()
         {
-            var emit = partialSys.GetComponent<ParticleSystem>();
-            emit.transform.parent = null;
-            var mainModule = emit.main;
-            mainModule.loop = false;
-
             // temp
             Destroy(gameObject);
+        }
+
+        private IEnumerator DestroyedAfter(float secs)
+        {
+            yield return new WaitForSecondsRealtime(secs);
+            if (gameObject && gameObject.activeSelf) Destroy(gameObject);
+            yield return null;
         }
     }
 }
