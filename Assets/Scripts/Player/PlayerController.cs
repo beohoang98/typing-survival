@@ -10,9 +10,10 @@ namespace Player
     {
         public static PlayerController instance;
     
-        private string currentString = "";
+        private string _currentString = "";
         [SerializeField] private TMP_InputField typingDisplay;
-        [SerializeField] private GameObject _bulletPrefab;
+        [SerializeField] private GameObject bulletPrefab;
+        private Animator _animator;
          
         // Start is called before the first frame update
         void Start()
@@ -26,6 +27,8 @@ namespace Player
             { 
                 typingDisplay.text = "";
             }
+
+            _animator = GetComponent<Animator>();
         }
     
         // Update is called once per frame
@@ -36,18 +39,18 @@ namespace Player
     
             }
             
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                Shoot(currentString);
+                Shoot(_currentString);
             } 
             
             if (Input.GetKeyDown(KeyCode.Backspace))
             {
                 Debug.Log("Backspace");
-                if (currentString.Length > 0)
+                if (_currentString.Length > 0)
                 {
-                    currentString = currentString.Remove(currentString.Length - 1, 1);
-                    typingDisplay.text = currentString;
+                    _currentString = _currentString.Remove(_currentString.Length - 1, 1);
+                    typingDisplay.text = _currentString;
                 }
             }
         }
@@ -72,8 +75,8 @@ namespace Player
         {
             if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
             {
-                currentString += c.ToString().ToUpper();
-                typingDisplay.text = currentString;
+                _currentString += c.ToString().ToUpper();
+                typingDisplay.text = _currentString;
             }
         }
 
@@ -83,11 +86,12 @@ namespace Player
             {
                 Transform enemyPos = WaveSpawner.Instance.GetEnemyTransform(word);
                 Quaternion quaternion = Quaternion.FromToRotation(Vector2.up, (Vector2)(enemyPos.position - transform.position));
-                GameObject bullet = Instantiate(_bulletPrefab, transform.position, quaternion);
+                GameObject bullet = Instantiate(bulletPrefab, transform.position, quaternion);
                 bullet.SetActive(true);
                 
-                currentString = "";
-                typingDisplay.text = currentString;
+                _currentString = "";
+                typingDisplay.text = _currentString;
+                _animator.SetTrigger("attack");
             }
             else
             {

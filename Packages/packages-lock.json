@@ -94,6 +94,13 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "io.tinu.asepriteimporter": {
+      "version": "https://github.com/martinhodler/unity-aseprite-importer.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "27c75ae7aff5fd06b5eced71a0612a9d98856daa"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
