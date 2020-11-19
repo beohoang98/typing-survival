@@ -658,3 +658,4 @@ InitTestScene*.unity
 # End of https://www.toptal.com/developers/gitignore/api/rider,unity,vscode,vs,csharp
 
 **/*/user_config.json
+!Packages/manifest.json
