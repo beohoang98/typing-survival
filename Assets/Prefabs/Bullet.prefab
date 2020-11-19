@@ -44,22 +44,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LightType: 3
-  m_BlendStyleIndex: 1
-  m_FalloffIntensity: 0.642
-  m_Color: {r: 0.3820755, g: 0.7455605, b: 1, a: 1}
-  m_Intensity: 1
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.767
+  m_Color: {r: 0.2082592, g: 0.9421192, b: 0.9811321, a: 1}
+  m_Intensity: 2.4
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 000000004fb33e76a7b6d58c
+  m_ApplyToSortingLayers: 000000004fb33e76a7b6d58c89a9cea39352dc7d
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 0
+  m_ShadowIntensity: 0.346
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0.15
-  m_PointLightOuterRadius: 0.41
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1.5
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -88,11 +88,11 @@ GameObject:
   - component: {fileID: 5847185628011767329}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: bullet
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4226763980322250932
 Transform:
   m_ObjectHideFlags: 0
@@ -101,7 +101,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4315434324420829752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5542891, y: 1.3201358, z: 81.344765}
+  m_LocalPosition: {x: 0.5542891, y: 1.3201358, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 27981672}
@@ -126,7 +126,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -208,7 +208,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac67339816a64232be7c4623d8edb6df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partialSys: {fileID: 0}
 --- !u!95 &5847185628011767329
 Animator:
   serializedVersion: 3

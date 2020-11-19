@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 785348016886919482}
   - component: {fileID: 5477538397821692276}
   - component: {fileID: 8614125919680489928}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 4129380434260597675}
   - component: {fileID: 4129380434260597672}
   - component: {fileID: 4129380434260597673}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4129380434676714254}
   - component: {fileID: 2063361497251555190}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LoseUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 671934347295867972}
   - component: {fileID: 3957667284606595491}
   - component: {fileID: 3381922103380522945}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 7578879478601278067}
   - component: {fileID: 4441209133167296781}
   - component: {fileID: 1600349675636553794}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 7855737857474228015}
   - component: {fileID: 1612924362403998800}
   - component: {fileID: 3609388775269249293}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RetryButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}

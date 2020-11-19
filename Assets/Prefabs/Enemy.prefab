@@ -45,21 +45,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.813
-  m_Color: {r: 1, g: 0.6143079, b: 0.5613208, a: 1}
+  m_FalloffIntensity: 0.686
+  m_Color: {r: 0.8207547, g: 0.3295601, b: 0.25938943, a: 1}
   m_Intensity: 1
-  m_LightVolumeOpacity: 0.179
-  m_ApplyToSortingLayers: 4fb33e76
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 000000004fb33e76a7b6d58c89a9cea39352dc7d
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 1
-  m_ShadowIntensity: 0.261
+  m_ShadowIntensity: 0.329
   m_ShadowVolumeIntensity: 0.261
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 0.63
+  m_PointLightOuterRadius: 3.2
   m_PointLightDistance: 0.83
   m_PointLightQuality: 0
   m_ShapeLightParametricSides: 5
@@ -157,13 +157,12 @@ MonoBehaviour:
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: 0
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
   m_fontSize: 11
   m_fontSizeBase: 10
   m_fontWeight: 400
@@ -171,6 +170,8 @@ MonoBehaviour:
   m_fontSizeMin: 6
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
   m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -181,10 +182,8 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
+  parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
@@ -192,40 +191,18 @@ MonoBehaviour:
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
   m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
   m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 3530897192691225195}
-    characterCount: 4
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
   m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &5099416155447010002
@@ -342,13 +319,14 @@ GameObject:
   - component: {fileID: 1460510749}
   - component: {fileID: 8667408178222847536}
   - component: {fileID: 2000425549}
+  - component: {fileID: 36920770}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: enemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8667408176930649651
 Transform:
   m_ObjectHideFlags: 0
@@ -357,7 +335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8667408176930649653}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.4, y: 3.4, z: 107.99324}
+  m_LocalPosition: {x: -7.4, y: 3.4, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 8326152860355261198}
@@ -427,6 +405,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b770b893d23f4e7b94d740ee2c941019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigid: {fileID: 0}
+  playerController: {fileID: 0}
 --- !u!50 &1460510748
 Rigidbody2D:
   serializedVersion: 4
@@ -460,7 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2dd5c065a694c4bb1dffe9ee8a4bad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textDisplay: {fileID: 3530897192691225195}
+  textDisplay: {fileID: 3530897192691225195}
 --- !u!60 &8667408178222847536
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -513,3 +493,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &36920770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8667408176930649653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000004fb33e76a7b6d58c89a9cea39352dc7d
+  m_ShapePath:
+  - {x: -0.024979591, y: -0.059028536, z: 0}
+  - {x: 0.03507495, y: -0.057766408, z: 0}
+  - {x: 0.06409788, y: 0.04135859, z: 0}
+  - {x: 0.02170968, y: 0.06912571, z: 0}
+  - {x: -0.010999441, y: 0.06874588, z: 0}
+  - {x: -0.052641153, y: 0.046027333, z: 0}
+  m_ShapePathHash: 125346829
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -6500

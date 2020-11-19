@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6868426419629274968}
   - component: {fileID: 6868426419629274970}
   - component: {fileID: 6868426419629274969}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 6868426419749566404}
   - component: {fileID: 6868426419749566406}
   - component: {fileID: 6868426419749566405}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 6868426420442433024}
   - component: {fileID: 6868426420442433026}
   - component: {fileID: 6868426420442433025}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 6868426420546456429}
   - component: {fileID: 6868426420546456428}
   - component: {fileID: 6868426420546456419}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6868426420740077364}
   - component: {fileID: 9146937824825803746}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WinUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}

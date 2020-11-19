@@ -1,78 +1,63 @@
-﻿using System;
+﻿using Config;
 using Enemy;
 using Game;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Player
 {
+    [DisallowMultipleComponent]
+    [RequireComponent(typeof(Animator))]
+    [RequireComponent(typeof(PolygonCollider2D))]
     public class PlayerController : MonoBehaviour
     {
-        public static PlayerController instance;
-    
+        public static PlayerController Instance;
+
         private string _currentString = "";
         [SerializeField] private TMP_InputField typingDisplay;
         [SerializeField] private GameObject bulletPrefab;
+        [SerializeField] private InputActionAsset inputActionAsset;
         private Animator _animator;
-         
-        // Start is called before the first frame update
-        void Start()
+        private readonly int attackTriggerID = Animator.StringToHash("attack");
+
+        private void Start()
         {
-            if (instance == null)
+            if (Instance == null)
             {
-                instance = this;
+                Instance = this;
             }
-    
+
             if (typingDisplay)
-            { 
+            {
                 typingDisplay.text = "";
             }
 
             _animator = GetComponent<Animator>();
-        }
-    
-        // Update is called once per frame
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-    
-            }
-            
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Shoot(_currentString);
-            } 
-            
-            if (Input.GetKeyDown(KeyCode.Backspace))
-            {
-                Debug.Log("Backspace");
-                if (_currentString.Length > 0)
-                {
-                    _currentString = _currentString.Remove(_currentString.Length - 1, 1);
-                    typingDisplay.text = _currentString;
-                }
-            }
-        }
-    
-        private void OnGUI()
-        {
-            if (Event.current.isKey)
-            {
-                HandleTyping(Event.current.character);
-            }
+            InputAction deleteAction = inputActionAsset.FindAction("Delete");
+            InputAction submitAction = inputActionAsset.FindAction("Submit");
+
+            deleteAction.performed += HandleBackspace;
+            submitAction.performed += Shoot;
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("enemy"))
+            if (other.CompareTag(GameTag.Enemy))
             {
                 GameController.Instance.Lose();
             }
         }
 
-        void HandleTyping(char c)
+        private void OnGUI()
         {
+            HandleTyping();
+        }
+
+        void HandleTyping()
+        {
+            if (!Event.current.isKey) return;
+            char c = Event.current.character;
             if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
             {
                 _currentString += c.ToString().ToUpper();
@@ -80,18 +65,30 @@ namespace Player
             }
         }
 
-        void Shoot(string word)
+        void HandleBackspace(InputAction.CallbackContext ctx)
         {
+            if (_currentString.Length > 0)
+            {
+                _currentString = _currentString.Remove(_currentString.Length - 1, 1);
+                typingDisplay.text = _currentString;
+            }
+        }
+
+        void Shoot(InputAction.CallbackContext ctx)
+        {
+            string word = _currentString;
             if (WaveSpawner.Instance.HasEnemy(word))
             {
                 Transform enemyPos = WaveSpawner.Instance.GetEnemyTransform(word);
-                Quaternion quaternion = Quaternion.FromToRotation(Vector2.up, (Vector2)(enemyPos.position - transform.position));
-                GameObject bullet = Instantiate(bulletPrefab, transform.position, quaternion);
+                var position = transform.position;
+                Quaternion quaternion =
+                    Quaternion.FromToRotation(Vector2.up, (Vector2) (enemyPos.position - position));
+                GameObject bullet = Instantiate(bulletPrefab, position, quaternion);
                 bullet.SetActive(true);
-                
+
                 _currentString = "";
                 typingDisplay.text = _currentString;
-                _animator.SetTrigger("attack");
+                _animator.SetTrigger(attackTriggerID);
             }
             else
             {
@@ -102,6 +99,8 @@ namespace Player
         void WarningTypeWrong()
         {
             Debug.Log("Type Wrong!");
+            _currentString = "";
+            typingDisplay.text = _currentString;
         }
     }
 }

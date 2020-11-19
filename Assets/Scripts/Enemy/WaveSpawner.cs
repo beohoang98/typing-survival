@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Game;
 using LevelWord;
+using UI;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -23,25 +24,25 @@ namespace Enemy
             public GameObject enemyPrefab;
         }
 
-        [SerializeField]
-        private Wave[] waves;
+        [SerializeField] private Wave[] waves;
 
-        [SerializeField]
-        private float radius = 10f;
+        [SerializeField] private float radius = 10f;
+        [SerializeField] private EnemyWaveUI enemyWaveUI;
 
         public enum WaveState
         {
-            DELAY,
-            SPAWNING,
-            END,
+            Delay,
+            Spawning,
+            End,
         }
-        private WaveState _state = WaveState.DELAY;
+
+        private WaveState _state = WaveState.Delay;
         public WaveState State => _state;
         private Wave _currentWave;
 
         private bool _isStop = false;
 
-        private Dictionary<string, EnemyWord> _enemies = new Dictionary<string, EnemyWord>();
+        private readonly Dictionary<string, EnemyWord> enemies = new Dictionary<string, EnemyWord>();
 
         private void Start()
         {
@@ -49,6 +50,7 @@ namespace Enemy
             {
                 _instance = this;
             }
+
             if (waves.Length > 0)
             {
                 foreach (Wave wave in waves)
@@ -57,35 +59,39 @@ namespace Enemy
                 }
             }
 
+            enemyWaveUI = FindObjectOfType<EnemyWaveUI>();
+            enemyWaveUI.SetNumberOfWave(waves.Length);
             StartCoroutine(DoSpawnLoop());
         }
 
         private void Update()
         {
-            if (_state == WaveState.END && _enemies.Count == 0)
+            if (_state == WaveState.End && enemies.Count == 0)
             {
                 GameController.Instance.Win();
             }
         }
 
-        
+
         IEnumerator DoSpawnLoop()
         {
             foreach (var wave in waves)
             {
-                _state = WaveState.DELAY;
+                _state = WaveState.Delay;
                 yield return new WaitForSeconds(wave.delay);
                 Debug.Log("Start new wave...");
-                _state = WaveState.SPAWNING;
+                _state = WaveState.Spawning;
                 _currentWave = wave;
                 yield return DoSpawn(wave);
+                enemyWaveUI.IncreaseCheckpoint();
             }
 
-            _state = WaveState.END;
+            _state = WaveState.End;
         }
 
         IEnumerator DoSpawn(Wave wave)
         {
+            Random.InitState((int) Time.time);
             float total = 0f;
             while (total < wave.spawnTime)
             {
@@ -93,7 +99,7 @@ namespace Enemy
                 {
                     yield break;
                 }
-                
+
                 float randomDeg = Random.Range(0, 360);
                 Vector2 pos = Quaternion.Euler(0, 0, randomDeg) * (Vector2.up * radius);
                 GameObject enemy = Instantiate(wave.enemyPrefab, pos, Quaternion.Euler(0, 0, 0));
@@ -102,32 +108,32 @@ namespace Enemy
                 do
                 {
                     word = wave.wordSpawner.GetWord().ToUpper();
-                } while (_enemies.ContainsKey(word));
+                } while (enemies.ContainsKey(word));
 
                 enemyWord.SetWord(word);
-                _enemies.Add(word, enemyWord);
+                enemies.Add(word, enemyWord);
 
                 Debug.Log($"Generate enemy {word}");
                 enemy.SetActive(true);
-                
+
                 yield return new WaitForSeconds(wave.rate);
                 total += wave.rate;
             }
         }
-        
+
         public bool HasEnemy(string word)
         {
-            return _enemies.ContainsKey(word);
+            return enemies.ContainsKey(word);
         }
 
         public void KillEnemy(string word)
         {
-            _enemies.Remove(word);
+            enemies.Remove(word);
         }
 
         public Transform GetEnemyTransform(string word)
         {
-            return _enemies[word].gameObject.transform;
+            return enemies[word].gameObject.transform;
         }
 
         public void Stop()

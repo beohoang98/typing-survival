@@ -1,8 +1,8 @@
-﻿using System;
-using Enemy;
+﻿using Enemy;
 using TMPro;
 using UI;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 namespace Game
@@ -15,9 +15,10 @@ namespace Game
         private int _score;
         public int GetScore() => _score;
 
-        [SerializeField] private TextMeshProUGUI _scoreDisplay;
+        [SerializeField] private TextMeshProUGUI scoreDisplay;
         [SerializeField] private WinUI winUI;
         [SerializeField] private LoseUI loseUI;
+        public InputActionAsset playerInputActionAsset;
 
         private void Start()
         {
@@ -31,11 +32,12 @@ namespace Game
             }
 
             _score = 0;
-        }
-
-        private void Update()
-        {
-            
+            playerInputActionAsset.Enable();
+            foreach (var action in playerInputActionAsset)
+            {
+                Debug.Log(action.name);
+                action.Enable();
+            }
         }
 
         public void IncreaseScore(int amount)
@@ -46,7 +48,7 @@ namespace Game
 
         void UpdateScoreToUi()
         {
-            _scoreDisplay.SetText(_score.ToString("#,###"));
+            scoreDisplay.SetText(_score.ToString("#,###"));
         }
 
         public void Win()
@@ -57,12 +59,14 @@ namespace Game
 
         public void Lose()
         {
+            playerInputActionAsset.Disable();
             WaveSpawner.Instance.Stop();
             loseUI.Show();
         }
 
         public void Retry()
         {
+            playerInputActionAsset.Disable();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

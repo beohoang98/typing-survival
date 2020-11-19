@@ -1,19 +1,21 @@
-﻿using System;
+﻿using Config;
 using Game;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Enemy
 {
     public class EnemyWord : MonoBehaviour
     {
         private string _word;
-        [SerializeField]
-        private TextMeshProUGUI _textDisplay;
+
+        [FormerlySerializedAs("_textDisplay")] [SerializeField]
+        private TextMeshProUGUI textDisplay;
 
         private readonly int _points = 100;
         private WaveSpawner _manager;
-        
+
         private void Start()
         {
             Canvas canvas = GetComponentInChildren<Canvas>();
@@ -21,20 +23,15 @@ namespace Enemy
             _manager = FindObjectOfType<WaveSpawner>();
         }
 
-        private void Update()
-        {
-           
-        }
-
         public void SetWord(string w)
         {
             _word = w;
-            _textDisplay.SetText(_word);
+            textDisplay.SetText(_word);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("bullet"))
+            if (other.CompareTag(GameTag.Bullet))
             {
                 GotKilled();
             }

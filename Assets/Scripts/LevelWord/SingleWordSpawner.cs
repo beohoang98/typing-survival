@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Random = UnityEngine.Random;
+﻿using Random = UnityEngine.Random;
 
 namespace LevelWord
 {
@@ -8,7 +6,7 @@ namespace LevelWord
     {
         public override string GetWord()
         {
-            string newWord = Char.ConvertFromUtf32('a' + Random.Range(0, 26));
+            string newWord = char.ConvertFromUtf32('a' + Random.Range(0, 26));
             return newWord;
         }
     }

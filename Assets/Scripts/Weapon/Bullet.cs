@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Config;
 using UnityEngine;
 
 namespace Weapon
@@ -21,7 +22,7 @@ namespace Weapon
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("enemy")) Explosion();
+            if (other.CompareTag(GameTag.Enemy)) Explosion();
         }
 
         private void Explosion()
