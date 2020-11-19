@@ -1,0 +1,39 @@
+name: Unity Build
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+
+jobs:
+  build:
+    name: Build for {{ matrix.targetPlatform }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        targetPlatform:
+          - StandaloneWindows64
+          - WebGL
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          lfs: true
+      - uses: actions/cache@v1.1.0
+        with:
+          path: Library
+          key: Library-${{ matrix.targetPlatform }}
+          restore-keys: |
+            Library-
+      - uses: webbertakken/unity-builder@v0.10
+        with:
+          unityVersion: 2019.4.14f1
+          targetPlatform: ${{ matrix.targetPlatform }}
+      # Output
+      - uses: actions/upload-artifact@v1
+        with:
+          name: Build
+          path: build
