@@ -2,6 +2,7 @@
 using Enemy;
 using Game;
 using TMPro;
+using UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -17,7 +18,6 @@ namespace Player
         private string _currentString = "";
         [SerializeField] private TMP_InputField typingDisplay;
         [SerializeField] private GameObject bulletPrefab;
-        [SerializeField] private InputActionAsset inputActionAsset;
         private Animator _animator;
         private readonly int attackTriggerID = Animator.StringToHash("attack");
 
@@ -34,11 +34,6 @@ namespace Player
             }
 
             _animator = GetComponent<Animator>();
-            InputAction deleteAction = inputActionAsset.FindAction("Delete");
-            InputAction submitAction = inputActionAsset.FindAction("Submit");
-
-            deleteAction.performed += HandleBackspace;
-            submitAction.performed += Shoot;
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -65,8 +60,9 @@ namespace Player
             }
         }
 
-        void HandleBackspace(InputAction.CallbackContext ctx)
+        public void HandleBackspace(InputAction.CallbackContext ctx)
         {
+            if (!ctx.started) return;
             if (_currentString.Length > 0)
             {
                 _currentString = _currentString.Remove(_currentString.Length - 1, 1);
@@ -74,8 +70,9 @@ namespace Player
             }
         }
 
-        void Shoot(InputAction.CallbackContext ctx)
+        public void Shoot(InputAction.CallbackContext ctx)
         {
+            if (!ctx.started) return;
             string word = _currentString;
             if (WaveSpawner.Instance.HasEnemy(word))
             {
@@ -101,6 +98,7 @@ namespace Player
             Debug.Log("Type Wrong!");
             _currentString = "";
             typingDisplay.text = _currentString;
+            CameraShake.Instance.Shake(0.5f);
         }
     }
 }

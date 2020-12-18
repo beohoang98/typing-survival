@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using UnityEngine;
 
 namespace Config
@@ -7,15 +6,13 @@ namespace Config
     [Serializable]
     public class UserSetting
     {
-        private static string _path = "user_config.json";
+        private int _level = 1;
+        private Resolution _res = Display.of["1280x720"];
+        private bool _isFullscreen = true;
 
-        private int level = 1;
-        Resolution _res = Display.of["1280x720"];
-        bool _fullscreen = true;
-        
         public void Apply()
         {
-            Screen.SetResolution(_res.width, _res.height, _fullscreen, _res.refreshRate);
+            Screen.SetResolution(_res.width, _res.height, _isFullscreen, _res.refreshRate);
         }
 
         public Resolution Res
@@ -31,10 +28,10 @@ namespace Config
 
         public bool Fullscreen
         {
-            get => _fullscreen;
+            get => _isFullscreen;
             set
             {
-                _fullscreen = value;
+                _isFullscreen = value;
                 Apply();
                 Save();
             }
@@ -42,23 +39,23 @@ namespace Config
 
         public int Level
         {
-            get => level;
+            get => _level;
             set
             {
-                level = value;
+                _level = value;
                 Apply();
                 Save();
             }
         }
-        
+
         public void Save()
         {
-            string json = JsonUtility.ToJson(this);
-            StreamWriter writer = new StreamWriter(_path);
-            writer.WriteLine(json);
-            writer.Close();
+            PlayerPrefs.SetInt("level", _level);
+            PlayerPrefs.SetString("resolution", $"{_res.width}x{_res.height}");
+            PlayerPrefs.SetInt("isFullscreen", _isFullscreen ? 1 : 0);
+            PlayerPrefs.Save();
         }
-        
+
         public static UserSetting Load()
         {
             UserSetting setting = Read();
@@ -68,25 +65,11 @@ namespace Config
 
         static UserSetting Read()
         {
-            if (!File.Exists(_path))
-            {
-                var setting = new UserSetting();
-                setting.Save();
-                return setting;
-            }
-
-            try
-            {
-                StreamReader reader = new StreamReader(_path);
-                string json = reader.ReadToEnd();
-                UserSetting setting = JsonUtility.FromJson<UserSetting>(json);
-                return setting;
-            }
-            catch (Exception e)
-            {
-                Debug.LogWarning(e.Message);
-                return new UserSetting();
-            }
+            UserSetting setting = new UserSetting();
+            setting._level = PlayerPrefs.GetInt("level", 1);
+            setting._res = Display.of[PlayerPrefs.GetString("resolution", "1280x720")];
+            setting._isFullscreen = PlayerPrefs.GetInt("isFullscreen", 0) == 1;
+            return setting;
         }
     }
 }

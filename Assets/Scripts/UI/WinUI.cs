@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Game;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,32 +6,46 @@ namespace UI
 {
     public class WinUI : MonoBehaviour
     {
-        [SerializeField] private Canvas canvas;
+        public static WinUI Instance;
+        [SerializeField] private GameObject wrapper;
         [SerializeField] private Text scoreText;
         [SerializeField] private Image background;
-        
+
         public Text ScoreText
         {
             get => scoreText;
             set => scoreText = value;
         }
 
-        public Canvas Canvas => canvas;
+        private void Awake()
+        {
+            if (Instance == null) Instance = this;
+            else Destroy(gameObject);
+        }
 
         private void Start()
         {
-            canvas.worldCamera = Camera.current;
-            canvas.gameObject.SetActive(false);
+            wrapper.SetActive(false);
         }
 
         public void Show()
         {
-            canvas.gameObject.SetActive(true);
+            wrapper.SetActive(true);
         }
 
         public void Hide()
         {
-            canvas.gameObject.SetActive(false);
+            wrapper.SetActive(false);
+        }
+
+        public void OnNextClicked()
+        {
+            GameController.Instance.NextLevel();
+        }
+
+        public void OnRetryClicked()
+        {
+            GameController.Instance.Retry();
         }
     }
 }

@@ -8,19 +8,17 @@ namespace UI
     public class EnemyWaveUI : MonoBehaviour
     {
         [SerializeField] private Slider slider;
-        [SerializeField] private Canvas canvas;
-        [SerializeField] private int numberOfWave = 3;
+        private int _numberOfWave = 3;
         [SerializeField] private Image waveIconPrefab;
 
-        private List<Image> waveIcons = new List<Image>();
-        private int currentProgress = 0;
+        private readonly List<Image> _waveIcons = new List<Image>();
+        private int _currentProgress;
 
         private void Start()
         {
             if (slider == null) slider = GetComponentInChildren<Slider>();
-            if (canvas == null) canvas = GetComponentInChildren<Canvas>();
             ReDrawIcons();
-            currentProgress = 0;
+            _currentProgress = 0;
             slider.value = 0;
         }
 
@@ -28,8 +26,8 @@ namespace UI
         {
             if (waveIconPrefab != null)
             {
-                waveIcons.Clear();
-                slider.maxValue = numberOfWave;
+                _waveIcons.Clear();
+                slider.maxValue = _numberOfWave;
 
                 waveIconPrefab.gameObject.SetActive(false);
                 Image[] oldIcons = GetComponentsInChildren<Image>();
@@ -42,39 +40,40 @@ namespace UI
 
                 float width = slider.GetComponent<RectTransform>().rect.width;
                 float iconSize = waveIconPrefab.GetComponent<RectTransform>().rect.width;
-                float margin = width / numberOfWave;
-                for (int idx = 0; idx < numberOfWave; ++idx)
+                float margin = width / _numberOfWave;
+                for (int idx = 0; idx < _numberOfWave; ++idx)
                 {
-                    GameObject newIcon = Instantiate(waveIconPrefab.gameObject, canvas.transform);
+                    GameObject newIcon = Instantiate(waveIconPrefab.gameObject, transform);
                     newIcon.SetActive(true);
+                    Vector2 sliderLocalPos = slider.transform.localPosition;
                     newIcon.transform.localPosition =
-                        new Vector3(slider.transform.localPosition.x - width / 2 + margin * (idx + 1) - iconSize / 2,
-                            slider.transform.localPosition.y, 0);
+                        new Vector3(sliderLocalPos.x - width / 2 + margin * (idx + 1) - iconSize / 2,
+                            sliderLocalPos.y, 0);
                     Image newIconImage = newIcon.GetComponent<Image>();
                     newIconImage.color = Color.gray;
-                    waveIcons.Add(newIconImage);
+                    _waveIcons.Add(newIconImage);
                 }
             }
         }
 
         public void SetNumberOfWave(int inNumberOfWave)
         {
-            numberOfWave = inNumberOfWave;
+            _numberOfWave = inNumberOfWave;
             ReDrawIcons();
         }
 
-        public int GetCurrentProgress() => currentProgress;
+        public int GetCurrentProgress() => _currentProgress;
 
         public void SetCurrentProgress(int value)
         {
-            currentProgress = value;
+            _currentProgress = value;
             slider.value = value;
-            waveIcons[value - 1].color = Color.yellow;
+            _waveIcons[value - 1].color = Color.yellow;
         }
 
         public void IncreaseCheckpoint()
         {
-            SetCurrentProgress(currentProgress + 1);
+            SetCurrentProgress(_currentProgress + 1);
         }
 
         private void Reset()

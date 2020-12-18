@@ -5,7 +5,7 @@ using Game;
 using LevelWord;
 using UI;
 using UnityEngine;
-using Random = UnityEngine.Random;
+using Random = System.Random;
 
 namespace Enemy
 {
@@ -17,17 +17,23 @@ namespace Enemy
         [Serializable]
         public class Wave
         {
-            public float delay = 1f;
+            [Header("Setting")] public float delay = 1f;
             public float spawnTime = 5f;
+
+            [Tooltip("Wait time between enemies, also mean 'Delay'")]
             public float rate = 1f;
-            public WordSpawner wordSpawner;
+
+            [Header("Object")] public WordSpawner wordSpawner;
             public GameObject enemyPrefab;
         }
 
         [SerializeField] private Wave[] waves;
-
-        [SerializeField] private float radius = 10f;
         [SerializeField] private EnemyWaveUI enemyWaveUI;
+
+        [SerializeField] [Tooltip("Distance from player where enemy will spawn in")]
+        private float radius = 10f;
+
+        private Random _random;
 
         public enum WaveState
         {
@@ -42,7 +48,7 @@ namespace Enemy
 
         private bool _isStop = false;
 
-        private readonly Dictionary<string, EnemyWord> enemies = new Dictionary<string, EnemyWord>();
+        private readonly Dictionary<string, EnemyWord> _enemies = new Dictionary<string, EnemyWord>();
 
         private void Start()
         {
@@ -59,6 +65,7 @@ namespace Enemy
                 }
             }
 
+            _random = new Random(DateTime.Now.Millisecond);
             enemyWaveUI = FindObjectOfType<EnemyWaveUI>();
             enemyWaveUI.SetNumberOfWave(waves.Length);
             StartCoroutine(DoSpawnLoop());
@@ -66,7 +73,7 @@ namespace Enemy
 
         private void Update()
         {
-            if (_state == WaveState.End && enemies.Count == 0)
+            if (_state == WaveState.End && _enemies.Count == 0)
             {
                 GameController.Instance.Win();
             }
@@ -91,7 +98,6 @@ namespace Enemy
 
         IEnumerator DoSpawn(Wave wave)
         {
-            Random.InitState((int) Time.time);
             float total = 0f;
             while (total < wave.spawnTime)
             {
@@ -100,7 +106,7 @@ namespace Enemy
                     yield break;
                 }
 
-                float randomDeg = Random.Range(0, 360);
+                float randomDeg = _random.Next(0, 360);
                 Vector2 pos = Quaternion.Euler(0, 0, randomDeg) * (Vector2.up * radius);
                 GameObject enemy = Instantiate(wave.enemyPrefab, pos, Quaternion.Euler(0, 0, 0));
                 EnemyWord enemyWord = enemy.GetComponent<EnemyWord>();
@@ -108,10 +114,10 @@ namespace Enemy
                 do
                 {
                     word = wave.wordSpawner.GetWord().ToUpper();
-                } while (enemies.ContainsKey(word));
+                } while (_enemies.ContainsKey(word));
 
                 enemyWord.SetWord(word);
-                enemies.Add(word, enemyWord);
+                _enemies.Add(word, enemyWord);
 
                 Debug.Log($"Generate enemy {word}");
                 enemy.SetActive(true);
@@ -123,17 +129,17 @@ namespace Enemy
 
         public bool HasEnemy(string word)
         {
-            return enemies.ContainsKey(word);
+            return _enemies.ContainsKey(word);
         }
 
         public void KillEnemy(string word)
         {
-            enemies.Remove(word);
+            _enemies.Remove(word);
         }
 
         public Transform GetEnemyTransform(string word)
         {
-            return enemies[word].gameObject.transform;
+            return _enemies[word].gameObject.transform;
         }
 
         public void Stop()

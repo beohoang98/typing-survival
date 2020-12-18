@@ -1,18 +1,21 @@
-﻿namespace LevelWord
+﻿using System.Collections;
+using Config;
+using UnityEngine;
+
+namespace LevelWord
 {
     public class DoubleWordSpawner : WordSpawner
     {
+        [SerializeField] private DataFile dataFile;
 
-        // Use this for initialization
-        void Start()
+        public override void Load()
         {
-
+            dataFile.LoadSync(null);
         }
 
-        // Update is called once per frame
-        void Update()
+        public override string GetWord()
         {
-
+            return dataFile.GetRandomWordByLength(2);
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using Game;
+﻿using Game;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,29 +6,35 @@ namespace UI
 {
     public class LoseUI : MonoBehaviour
     {
-        [SerializeField] private Canvas canvas;
+        public static LoseUI Instance;
+        [SerializeField] private GameObject wrapper;
         [SerializeField] private Button retryBtn;
+
+        private void Awake()
+        {
+            if (Instance == null) Instance = this;
+            else Destroy(gameObject);
+        }
 
         private void Start()
         {
-            canvas.worldCamera = Camera.current;
             retryBtn.onClick.AddListener(OnRetryClicked);
-            canvas.gameObject.SetActive(false);
+            wrapper.SetActive(false);
         }
 
-        void OnRetryClicked()
+        public void OnRetryClicked()
         {
             GameController.Instance.Retry();
         }
 
         public void Show()
         {
-            canvas.gameObject.SetActive(true);
+            wrapper.SetActive(true);
         }
-        
+
         public void Hide()
         {
-            canvas.gameObject.SetActive(false);
+            wrapper.SetActive(false);
         }
     }
 }

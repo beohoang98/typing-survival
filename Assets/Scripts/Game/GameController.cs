@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 namespace Game
 {
+    [DisallowMultipleComponent]
     public class GameController : MonoBehaviour
     {
         private static GameController _instance;
@@ -16,8 +17,6 @@ namespace Game
         public int GetScore() => _score;
 
         [SerializeField] private TextMeshProUGUI scoreDisplay;
-        [SerializeField] private WinUI winUI;
-        [SerializeField] private LoseUI loseUI;
         public InputActionAsset playerInputActionAsset;
 
         private void Start()
@@ -53,21 +52,28 @@ namespace Game
 
         public void Win()
         {
-            winUI.ScoreText.text = _score.ToString("#,###");
-            winUI.Show();
+            WinUI.Instance.ScoreText.text = _score.ToString("#,###");
+            WinUI.Instance.Show();
         }
 
         public void Lose()
         {
             playerInputActionAsset.Disable();
             WaveSpawner.Instance.Stop();
-            loseUI.Show();
+            LoseUI.Instance.Show();
         }
 
         public void Retry()
         {
             playerInputActionAsset.Disable();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        public void NextLevel()
+        {
+            int currentScene = SceneHolder.SceneIndex;
+            SceneHolder.SceneIndex = currentScene + 1;
+            SceneManager.LoadScene("Scenes/Loading");
         }
     }
 }
