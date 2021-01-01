@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334b79f9adcf482d91a332435b4e1916, type: 3}
+  m_Name: LevelConfig
+  m_EditorClassIdentifier: 
+  scenesSaved:
+  - level: 1
+    sceneName: Level1
+  - level: 2
+    sceneName: Level2
+  levels:
+  - level: 1
+    scene: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
+  - level: 2
+    scene: {fileID: 102900000, guid: b37947aa84889f94da3d9477125b1d71, type: 3}

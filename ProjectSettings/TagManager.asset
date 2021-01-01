@@ -15,10 +15,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Shield
+  - Player
+  - Projectile
   - 
   - 
   - 
@@ -48,6 +48,9 @@ TagManager:
     locked: 0
   - name: Sprite
     uniqueID: 2362816167
+    locked: 0
+  - name: Player
+    uniqueID: 1562961517
     locked: 0
   - name: Tree
     uniqueID: 2748230025
