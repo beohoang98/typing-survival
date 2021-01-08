@@ -15,6 +15,7 @@ namespace Game.Scripts.UI
     public class MenuController : MonoBehaviour
     {
         [SerializeField] private LevelConfig levelConfig;
+        [SerializeField] private InputActionAsset inputActionAsset;
         [SerializeField] private GameObject wrapper;
 
         [Header("Main Menu")] [SerializeField] private GameObject mainMenuUI;
@@ -37,12 +38,13 @@ namespace Game.Scripts.UI
 
 
         private UserSetting _setting;
+        private InputAction _escAction;
 
         #region Unity Functions
 
         private void Awake()
         {
-            DontDestroyOnLoad(gameObject);
+            // DontDestroyOnLoad(gameObject);
 
             _setting = UserSetting.Load();
             settingUI.SetActive(false);
@@ -61,15 +63,32 @@ namespace Game.Scripts.UI
             newButton.onClick.AddListener(NewPressed);
             playBackButton.onClick.AddListener(PlayMenuBackPressed);
 
-            wrapper.SetActive(true);
+            _escAction = inputActionAsset.FindAction("ESC");
+            _escAction.Enable();
         }
 
         private void Start()
         {
             displayDropdown.value = displayDropdown.options.FindIndex(data => data.text == _setting.Res.ToString());
             fullscreenToggle.isOn = _setting.Fullscreen;
-            EventSystem.current.SetSelectedGameObject(playButton.gameObject);
-            playButton.gameObject.SetActive(SceneManager.GetActiveScene().name.Equals("Menu"));
+
+            bool isMenuScene = SceneManager.GetActiveScene().name.Equals("Menu");
+            playButton.gameObject.SetActive(isMenuScene);
+            wrapper.SetActive(isMenuScene);
+            if (isMenuScene)
+            {
+                EventSystem.current.SetSelectedGameObject(playButton.gameObject);
+            }
+        }
+
+        private void OnEnable()
+        {
+            _escAction.started += OpenMenu;
+        }
+
+        private void OnDisable()
+        {
+            _escAction.started -= OpenMenu;
         }
 
         #endregion
@@ -78,8 +97,8 @@ namespace Game.Scripts.UI
 
         public void OpenMenu(InputAction.CallbackContext context)
         {
-            if (!context.started) return;
             Debug.Log("ESC");
+            if (!context.started) return;
             if (SceneManager.GetActiveScene().name.Equals("Menu")) return;
             if (wrapper.activeSelf)
             {

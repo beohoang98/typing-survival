@@ -36,6 +36,7 @@ namespace Game.Scripts.UI
         {
             if (UserScore.instance.IsLevelUnlocked(level))
             {
+                UserScore.instance.playingLevel = level;
                 SceneHolder.sceneIndex = levelConfig.GetSceneIndexOfLevel(level);
                 SceneManager.LoadScene("Loading");
             }
