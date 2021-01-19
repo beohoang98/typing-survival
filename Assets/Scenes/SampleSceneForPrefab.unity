@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -250,11 +250,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa678ef94a0e44b283ff432ac961f46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 299976133}
   waves:
   - delay: 5
     spawnTime: 10
-    positionSpawner: {fileID: 299976133}
-    particleSystemEffect: {fileID: 0}
     rate: 4
     wordSpawner: {fileID: 7035189591640511562, guid: 4a14f964fbad9174781224a28fab959e,
       type: 3}
@@ -262,8 +261,6 @@ MonoBehaviour:
       type: 3}
   - delay: 5
     spawnTime: 10
-    positionSpawner: {fileID: 299976133}
-    particleSystemEffect: {fileID: 0}
     rate: 2
     wordSpawner: {fileID: 7035189591640511562, guid: 4a14f964fbad9174781224a28fab959e,
       type: 3}
@@ -271,8 +268,6 @@ MonoBehaviour:
       type: 3}
   - delay: 5
     spawnTime: 5
-    positionSpawner: {fileID: 299976133}
-    particleSystemEffect: {fileID: 0}
     rate: 1
     wordSpawner: {fileID: 7035189591640511562, guid: 4a14f964fbad9174781224a28fab959e,
       type: 3}
