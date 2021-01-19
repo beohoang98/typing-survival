@@ -16,7 +16,7 @@ namespace Game.Scripts.Enemy
         private void Update()
         {
             rigid.velocity = speed *
-                             (PlayerController.Instance.gameObject.transform.position - gameObject.transform.position)
+                             (PlayerController.instance.gameObject.transform.position - gameObject.transform.position)
                              .normalized;
         }
     }

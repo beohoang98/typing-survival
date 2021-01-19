@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using Game.Scripts.Game;
 using Game.Scripts.LevelWord;
 using Game.Scripts.UI;
+using JetBrains.Annotations;
 using UnityEngine;
-using Random = System.Random;
 
 namespace Game.Scripts.Enemy
 {
@@ -18,24 +18,25 @@ namespace Game.Scripts.Enemy
         public class Wave
         {
             [Header("Setting")] public float delay = 1f;
-            public float spawnTime = 5f;
+            public float totalCount = 5f;
+            public AbstractPositionSpawner positionSpawner;
+
+            [Tooltip("Effect after spawned"), CanBeNull]
+            public GameObject particleSystemEffect;
 
             [Tooltip("Wait time between enemies, also mean 'Delay'")]
             public float rate = 1f;
 
             [Header("Object")] public WordSpawner wordSpawner;
             public GameObject enemyPrefab;
+
+            [HideInInspector] public int killedCount = 0;
         }
 
-        [SerializeField] private Wave[] waves;
+        [Header("Data")] [SerializeField] private Wave[] waves;
         [SerializeField] private EnemyWaveUI enemyWaveUI;
 
-        [SerializeField] [Tooltip("Distance from player where enemy will spawn in")]
-        private float radius = 10f;
-
-        private Random _random;
-
-        public enum WaveState
+        private enum WaveState
         {
             Delay,
             Spawning,
@@ -43,8 +44,8 @@ namespace Game.Scripts.Enemy
         }
 
         private WaveState _state = WaveState.Delay;
-        public WaveState State => _state;
-        private Wave _currentWave;
+        // public WaveState State => _state;
+        // private Wave _currentWave;
 
         private bool _isStop = false;
 
@@ -65,7 +66,6 @@ namespace Game.Scripts.Enemy
                 }
             }
 
-            _random = new Random(DateTime.Now.Millisecond);
             enemyWaveUI = FindObjectOfType<EnemyWaveUI>();
             enemyWaveUI.SetNumberOfWave(waves.Length);
             StartCoroutine(DoSpawnLoop());
@@ -88,9 +88,8 @@ namespace Game.Scripts.Enemy
                 yield return new WaitForSeconds(wave.delay);
                 Debug.Log("Start new wave...");
                 _state = WaveState.Spawning;
-                _currentWave = wave;
+                // _currentWave = wave;
                 yield return DoSpawn(wave);
-                enemyWaveUI.IncreaseCheckpoint();
             }
 
             _state = WaveState.End;
@@ -98,17 +97,18 @@ namespace Game.Scripts.Enemy
 
         IEnumerator DoSpawn(Wave wave)
         {
-            float total = 0f;
-            while (total < wave.spawnTime)
+            int spawnedCount = 0;
+            wave.killedCount = 0;
+            while (spawnedCount < wave.totalCount)
             {
                 if (_isStop)
                 {
                     yield break;
                 }
 
-                float randomDeg = _random.Next(0, 360);
-                Vector2 pos = Quaternion.Euler(0, 0, randomDeg) * (Vector2.up * radius);
-                GameObject enemy = Instantiate(wave.enemyPrefab, pos, Quaternion.Euler(0, 0, 0));
+                Vector2 pos = wave.positionSpawner.GetRandomPosition();
+
+                GameObject enemy = Instantiate(wave.enemyPrefab, pos, Quaternion.identity);
                 EnemyWord enemyWord = enemy.GetComponent<EnemyWord>();
                 string word;
                 do
@@ -117,14 +117,31 @@ namespace Game.Scripts.Enemy
                 } while (_enemies.ContainsKey(word));
 
                 enemyWord.SetWord(word);
+                enemyWord.killedEvent.AddListener((() => ++wave.killedCount));
                 _enemies.Add(word, enemyWord);
 
                 Debug.Log($"Generate enemy {word}");
                 enemy.SetActive(true);
+                if (wave.particleSystemEffect != null)
+                {
+                    Instantiate(wave.particleSystemEffect, pos, Quaternion.identity);
+                }
 
                 yield return new WaitForSeconds(wave.rate);
-                total += wave.rate;
+                ++spawnedCount;
             }
+
+            StartCoroutine(WaitToClearEnemyToIncreaseCheckpoint(wave));
+        }
+
+        private IEnumerator WaitToClearEnemyToIncreaseCheckpoint(Wave wave)
+        {
+            while (wave.killedCount < wave.totalCount)
+            {
+                yield return null;
+            }
+
+            enemyWaveUI.IncreaseCheckpoint();
         }
 
         public bool HasEnemy(string word)

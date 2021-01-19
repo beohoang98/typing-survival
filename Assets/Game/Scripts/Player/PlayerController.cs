@@ -2,6 +2,7 @@
 using Game.Scripts.Enemy;
 using Game.Scripts.Game;
 using Game.Scripts.UI;
+using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,19 +14,20 @@ namespace Game.Scripts.Player
     [RequireComponent(typeof(PolygonCollider2D))]
     public class PlayerController : MonoBehaviour
     {
-        public static PlayerController Instance;
+        public static PlayerController instance;
 
         private string _currentString = "";
         [SerializeField] private TMP_InputField typingDisplay;
         [SerializeField] private GameObject bulletPrefab;
+        [SerializeField, CanBeNull] private AudioSource fireSound;
         private Animator _animator;
-        public readonly int attackTriggerID = Animator.StringToHash("attack");
+        private readonly int attackTriggerID = Animator.StringToHash("attack");
 
         private void Start()
         {
-            if (Instance == null)
+            if (instance == null)
             {
-                Instance = this;
+                instance = this;
             }
 
             if (typingDisplay)
@@ -86,6 +88,7 @@ namespace Game.Scripts.Player
                 _currentString = "";
                 typingDisplay.text = _currentString;
                 _animator.SetTrigger(attackTriggerID);
+                if (fireSound != null) fireSound.Play();
             }
             else
             {

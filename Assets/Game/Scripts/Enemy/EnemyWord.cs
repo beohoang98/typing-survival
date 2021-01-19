@@ -2,6 +2,7 @@
 using Game.Scripts.Game;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 
 namespace Game.Scripts.Enemy
@@ -15,6 +16,8 @@ namespace Game.Scripts.Enemy
 
         private readonly int _points = 100;
         private WaveSpawner _manager;
+
+        public UnityEvent killedEvent;
 
         private void Start()
         {
@@ -41,6 +44,7 @@ namespace Game.Scripts.Enemy
         {
             _manager.KillEnemy(_word);
             GameController.Instance.IncreaseScore(_points);
+            killedEvent.Invoke();
             Destroy(gameObject);
         }
     }
