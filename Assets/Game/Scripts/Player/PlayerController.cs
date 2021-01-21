@@ -47,6 +47,7 @@ namespace Game.Scripts.Player
 
         private void OnCollisionEnter2D(Collision2D other)
         {
+            Debug.Log($"Touch {other.collider.gameObject.name}");
             if (other.collider.CompareTag(GameTag.Enemy))
             {
                 GameController.Instance.Lose();

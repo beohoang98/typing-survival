@@ -24,8 +24,9 @@ namespace Game.Scripts.Game
         {
             int sceneIdx = SceneHolder.sceneIndex;
             Sprite sceneImage = splashScreenConfig.GetSpriteOf(sceneIdx);
-            splashScreen.sprite = sceneImage;
-            
+            if (sceneImage != null)
+                splashScreen.sprite = sceneImage;
+
             var operation = SceneManager.LoadSceneAsync(sceneIdx);
 
             while (!operation.isDone)

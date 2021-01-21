@@ -27,7 +27,9 @@ namespace Game.Scripts.Config
 
         public Sprite GetSpriteOf(int sceneIndex)
         {
-            return _mapSprite[sceneIndex];
+            if (_mapSprite.ContainsKey(sceneIndex))
+                return _mapSprite[sceneIndex];
+            return null;
         }
     }
 }

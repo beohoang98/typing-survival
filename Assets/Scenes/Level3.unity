@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -281,6 +281,21 @@ PrefabInstance:
       propertyPath: typingDisplay
       value: 
       objectReference: {fileID: 524580300}
+    - target: {fileID: 7407596485702612157, guid: cdd1633cfa002834d807dcf7c25a13d2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407596485702612157, guid: cdd1633cfa002834d807dcf7c25a13d2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407596485702612157, guid: cdd1633cfa002834d807dcf7c25a13d2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7407596485702612158, guid: cdd1633cfa002834d807dcf7c25a13d2,
         type: 3}
       propertyPath: m_DrawMode
@@ -1779,6 +1794,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1747961791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7407596485702612153, guid: cdd1633cfa002834d807dcf7c25a13d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 118105986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1747961792
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747961791}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -9.7, y: 154.86}
+  serializedVersion: 2
+  m_Radius: 94.7
 --- !u!1 &1831434195
 GameObject:
   m_ObjectHideFlags: 0
