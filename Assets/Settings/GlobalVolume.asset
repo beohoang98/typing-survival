@@ -50,7 +50,7 @@ MonoBehaviour:
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 1
     min: 0
   scatter:
     m_OverrideState: 1
@@ -108,8 +108,8 @@ MonoBehaviour:
   active: 1
   m_AdvancedMode: 0
   temperature:
-    m_OverrideState: 1
-    m_Value: -50
+    m_OverrideState: 0
+    m_Value: -40
     min: -100
     max: 100
   tint:

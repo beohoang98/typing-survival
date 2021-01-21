@@ -252,7 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - delay: 5
-    spawnTime: 10
+    totalCount: 5
     positionSpawner: {fileID: 299976133}
     particleSystemEffect: {fileID: 0}
     rate: 4
@@ -260,8 +260,9 @@ MonoBehaviour:
       type: 3}
     enemyPrefab: {fileID: 8667408176930649653, guid: 8f7e820a480dea541b7994812056983c,
       type: 3}
+    killedCount: 0
   - delay: 5
-    spawnTime: 10
+    totalCount: 5
     positionSpawner: {fileID: 299976133}
     particleSystemEffect: {fileID: 0}
     rate: 2
@@ -269,8 +270,9 @@ MonoBehaviour:
       type: 3}
     enemyPrefab: {fileID: 8667408176930649653, guid: 8f7e820a480dea541b7994812056983c,
       type: 3}
+    killedCount: 0
   - delay: 5
-    spawnTime: 5
+    totalCount: 5
     positionSpawner: {fileID: 299976133}
     particleSystemEffect: {fileID: 0}
     rate: 1
@@ -278,6 +280,7 @@ MonoBehaviour:
       type: 3}
     enemyPrefab: {fileID: 8667408176930649653, guid: 8f7e820a480dea541b7994812056983c,
       type: 3}
+    killedCount: 0
   enemyWaveUI: {fileID: 714726831}
 --- !u!1001 &394992790
 PrefabInstance:
@@ -1129,7 +1132,7 @@ GameObject:
   - component: {fileID: 1913729195}
   - component: {fileID: 1913729197}
   m_Layer: 0
-  m_Name: PlayerShield
+  m_Name: PlayerPillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -23,13 +23,20 @@ namespace Game.Scripts.Player
         private Animator _animator;
         private readonly int attackTriggerID = Animator.StringToHash("attack");
 
-        private void Start()
+        private void Awake()
         {
             if (instance == null)
             {
                 instance = this;
             }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
 
+        private void Start()
+        {
             if (typingDisplay)
             {
                 typingDisplay.text = "";

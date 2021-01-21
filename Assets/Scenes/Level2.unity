@@ -792,7 +792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802327746}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: -0.86, z: 0}
+  m_LocalPosition: {x: 0.15, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1994758721}
@@ -893,14 +893,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPosition:
-  - {x: 4.559954, y: 5.8596864}
-  - {x: -4.763425, y: 5.8643823}
-  - {x: 5.1777897, y: -6.323392}
-  - {x: -4.637973, y: -6.1895404}
-  - {x: 10.029075, y: -2.9154186}
-  - {x: 10.029075, y: 3.2865257}
-  - {x: -10.114508, y: 3.2235622}
-  - {x: -9.965627, y: -3.1555667}
+  - {x: 4.4486094, y: 6.19379}
+  - {x: -4.3815117, y: 6.355928}
+  - {x: 5.5153418, y: -5.8818803}
+  - {x: -4.560076, y: -6.059684}
+  - {x: 8.321802, y: -2.0615942}
+  - {x: 8.507375, y: 2.5069458}
+  - {x: -8.755147, y: 1.6861064}
+  - {x: -8.583277, y: 0.01626207}
 --- !u!1001 &890538277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1509,7 +1509,7 @@ MonoBehaviour:
     rate: 2
     wordSpawner: {fileID: -2706727782861213011, guid: c4cce0f05bddd7240a450cdc2bccad5b,
       type: 3}
-    enemyPrefab: {fileID: 8667408176930649653, guid: 8f7e820a480dea541b7994812056983c,
+    enemyPrefab: {fileID: 2078654325595715120, guid: 4627245912be5844594635c170a51f5a,
       type: 3}
     killedCount: 0
   - delay: 4

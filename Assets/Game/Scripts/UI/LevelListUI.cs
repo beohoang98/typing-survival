@@ -34,6 +34,7 @@ namespace Game.Scripts.UI
 
         private void OnLevelChosen(uint level)
         {
+            Debug.Log(level.ToString());
             if (UserScore.instance.IsLevelUnlocked(level))
             {
                 UserScore.instance.playingLevel = level;
