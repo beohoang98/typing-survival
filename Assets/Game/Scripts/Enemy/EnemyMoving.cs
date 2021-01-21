@@ -3,21 +3,26 @@ using UnityEngine;
 
 namespace Game.Scripts.Enemy
 {
+    [DisallowMultipleComponent]
+    [RequireComponent(typeof(SpriteRenderer))]
     public class EnemyMoving : MonoBehaviour
     {
         [SerializeField] private float speed = 0.8f;
-        [SerializeField] private Rigidbody2D rigid;
+        private Rigidbody2D _rigid;
+        private SpriteRenderer _renderer;
+        private Vector2 _direction;
 
         private void Start()
         {
-            rigid = GetComponent<Rigidbody2D>();
+            _rigid = GetComponent<Rigidbody2D>();
+            _renderer = GetComponent<SpriteRenderer>();
         }
 
         private void Update()
         {
-            rigid.velocity = speed *
-                             (PlayerController.instance.gameObject.transform.position - gameObject.transform.position)
-                             .normalized;
+            _direction = (PlayerController.instance.gameObject.transform.position - transform.position).normalized;
+            _rigid.velocity = (speed * _direction);
+            _renderer.flipX = _direction.x < 0;
         }
     }
 }
