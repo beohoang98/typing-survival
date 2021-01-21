@@ -23,13 +23,20 @@ namespace Game.Scripts.Player
         private Animator _animator;
         private readonly int attackTriggerID = Animator.StringToHash("attack");
 
-        private void Start()
+        private void Awake()
         {
             if (instance == null)
             {
                 instance = this;
             }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
 
+        private void Start()
+        {
             if (typingDisplay)
             {
                 typingDisplay.text = "";
@@ -40,6 +47,7 @@ namespace Game.Scripts.Player
 
         private void OnCollisionEnter2D(Collision2D other)
         {
+            Debug.Log($"Touch {other.collider.gameObject.name}");
             if (other.collider.CompareTag(GameTag.Enemy))
             {
                 GameController.Instance.Lose();

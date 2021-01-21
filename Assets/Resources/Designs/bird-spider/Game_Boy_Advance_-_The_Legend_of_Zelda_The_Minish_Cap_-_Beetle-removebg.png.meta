@@ -1,0 +1,1427 @@
+fileFormatVersion: 2
+guid: fffcb2e7668ec994eba48c8b979a14b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2347878778884484117
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_0
+  - first:
+      213: -8855148384766714072
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_1
+  - first:
+      213: 432281718753673174
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_2
+  - first:
+      213: 6874818634692507697
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_3
+  - first:
+      213: -7778935554039808372
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_4
+  - first:
+      213: -5919058837964740159
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_5
+  - first:
+      213: 5389386768421627545
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_6
+  - first:
+      213: 6694196217186225102
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_7
+  - first:
+      213: -8779491142817151039
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_8
+  - first:
+      213: -4373622637374330469
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_9
+  - first:
+      213: 3738108856941097089
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_10
+  - first:
+      213: -8028713738116319399
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_11
+  - first:
+      213: 1015669763728976687
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_12
+  - first:
+      213: 1065064601344683968
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_13
+  - first:
+      213: 8910922722658040476
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_14
+  - first:
+      213: -4449114874632494270
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_15
+  - first:
+      213: -7640491383181873136
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_16
+  - first:
+      213: -6086831048873911676
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_17
+  - first:
+      213: -7653566927650408565
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_18
+  - first:
+      213: -7511067839926961538
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_19
+  - first:
+      213: -8400367007413835492
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_20
+  - first:
+      213: 7158310649076813379
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_21
+  - first:
+      213: 7330143850078967794
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_22
+  - first:
+      213: -3587164883088917257
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_23
+  - first:
+      213: 4953410614844941696
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_24
+  - first:
+      213: 3480867024824223852
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_25
+  - first:
+      213: 4387549180099323305
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_26
+  - first:
+      213: -7564215026427373238
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_27
+  - first:
+      213: -3851638180522663075
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_28
+  - first:
+      213: 9162769030124716747
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_29
+  - first:
+      213: 1887934198977853127
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_30
+  - first:
+      213: -8110597726906732503
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_31
+  - first:
+      213: -3457394221655187560
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_32
+  - first:
+      213: -2143967565430988499
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_33
+  - first:
+      213: -3536063378627575144
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_34
+  - first:
+      213: -1953441797401450344
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_35
+  - first:
+      213: 395309963911684711
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_36
+  - first:
+      213: 1502829625753322993
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_37
+  - first:
+      213: -4916810908994704841
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_38
+  - first:
+      213: 2381872101723415763
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_39
+  - first:
+      213: -5399279605743117355
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_40
+  - first:
+      213: -1992614690207614847
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_41
+  - first:
+      213: 5312833948896866119
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_42
+  - first:
+      213: -6032925080515968707
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_43
+  - first:
+      213: 1761955779407923554
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_44
+  - first:
+      213: -3014189194313954826
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_45
+  - first:
+      213: -5771405008662777632
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_46
+  - first:
+      213: -3996573209637527743
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_47
+  - first:
+      213: -2778456989923644649
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_48
+  - first:
+      213: -2910442137633153074
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_49
+  - first:
+      213: -7292585606865427401
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_50
+  - first:
+      213: -2487338621626514078
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_51
+  - first:
+      213: 6182597008285848767
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_52
+  - first:
+      213: -5253647084525929553
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_53
+  - first:
+      213: 8419593295964459062
+    second: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_54
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 76
+        width: 12
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c661f4f47559020800000000000000
+      internalID: 2347878778884484117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 81
+        width: 10
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f1b9ce5713c1580800000000000000
+      internalID: -8855148384766714072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 85
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df3531dee5cff500800000000000000
+      internalID: 432281718753673174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 78
+        width: 12
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1383518bf13486f50800000000000000
+      internalID: 6874818634692507697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_4
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 83
+        width: 8
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8efcc2045bab0490800000000000000
+      internalID: -7778935554039808372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_5
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 85
+        width: 4
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9a97ee8574bdda0800000000000000
+      internalID: -5919058837964740159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 61
+        width: 17
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99626f036b2faca40800000000000000
+      internalID: 5389386768421627545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_7
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 61
+        width: 16
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb062efdff86ec50800000000000000
+      internalID: 6694196217186225102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 61
+        width: 16
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c702b3425bf82680800000000000000
+      internalID: -8779491142817151039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_9
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 61
+        width: 16
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9922bd3265cd43c0800000000000000
+      internalID: -4373622637374330469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_10
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 62
+        width: 14
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18037b5333e60e330800000000000000
+      internalID: 3738108856941097089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_11
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 62
+        width: 14
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9573744a467449090800000000000000
+      internalID: -8028713738116319399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_12
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 62
+        width: 14
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bab24d442681e00800000000000000
+      internalID: 1015669763728976687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_13
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 62
+        width: 14
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf2ef9ac9ed7ce00800000000000000
+      internalID: 1065064601344683968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 49
+        width: 16
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a3df01105f9ab70800000000000000
+      internalID: 8910922722658040476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_15
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 42
+        width: 10
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243af9c08919142c0800000000000000
+      internalID: -4449114874632494270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 49
+        width: 8
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010f20c619587f590800000000000000
+      internalID: -7640491383181873136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_17
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 49
+        width: 14
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a5d04196b378ba0800000000000000
+      internalID: -6086831048873911676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_18
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 44
+        width: 10
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8738bcfd6119c590800000000000000
+      internalID: -7653566927650408565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_19
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 49
+        width: 6
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7afa4d489353c790800000000000000
+      internalID: -7511067839926961538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 27
+        width: 36
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19ef2cb6b6eb6b80800000000000000
+      internalID: -8400367007413835492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_21
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 29
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e8e16eb9d675360800000000000000
+      internalID: 7158310649076813379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_22
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 29
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f79870bef6e9b560800000000000000
+      internalID: 7330143850078967794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_23
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 29
+        width: 4
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcbab06b84d73ec0800000000000000
+      internalID: -3587164883088917257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_24
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 29
+        width: 4
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0856b7cb5bc0eb440800000000000000
+      internalID: 4953410614844941696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 29
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68c40ddd168e4030800000000000000
+      internalID: 3480867024824223852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_26
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 32
+        width: 9
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5606aabb4b3ec30800000000000000
+      internalID: 4387549180099323305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 17
+        width: 10
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49df19a282860790800000000000000
+      internalID: -7564215026427373238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_28
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 17
+        width: 5
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d536d9e4b7b3c8ac0800000000000000
+      internalID: -3851638180522663075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_29
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 17
+        width: 5
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2c88fe2e1b82f70800000000000000
+      internalID: 9162769030124716747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_30
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 17
+        width: 6
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6f269b62a433a10800000000000000
+      internalID: 1887934198977853127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_31
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 17
+        width: 6
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92032a3d65e517f80800000000000000
+      internalID: -8110597726906732503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_32
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 17
+        width: 4
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f11c1064ed400d0800000000000000
+      internalID: -3457394221655187560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_33
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 23
+        width: 15
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21e684cbd81f32e0800000000000000
+      internalID: -2143967565430988499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_34
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 15
+        width: 5
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892c2ad87116deec0800000000000000
+      internalID: -3536063378627575144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_35
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 15
+        width: 5
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8986c78f80bf3e4e0800000000000000
+      internalID: -1953441797401450344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_36
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 17
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762e027515c6c7500800000000000000
+      internalID: 395309963911684711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_37
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 15
+        width: 5
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5c5f0159f1bd410800000000000000
+      internalID: 1502829625753322993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_38
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 17
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73aea95578af3cbb0800000000000000
+      internalID: -4916810908994704841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_39
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 17
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d423ab8e0c1e0120800000000000000
+      internalID: 2381872101723415763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_40
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 17
+        width: 8
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db9ba02ec7e115b0800000000000000
+      internalID: -5399279605743117355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_41
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 13
+        width: 26
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18833ff1f7fc854e0800000000000000
+      internalID: -1992614690207614847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_42
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 8
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f22a2f35afab940800000000000000
+      internalID: 5312833948896866119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_43
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d310d436a9eb64ca0800000000000000
+      internalID: -6032925080515968707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_44
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 3
+        width: 9
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2694e853279b37810800000000000000
+      internalID: 1761955779407923554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_45
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 3
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9881bc5e27b26d0800000000000000
+      internalID: -3014189194313954826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_46
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1
+        width: 6
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0bebb09b9d7efa0800000000000000
+      internalID: -5771405008662777632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_47
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 3
+        width: 4
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f56b037d15988c0800000000000000
+      internalID: -3996573209637527743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_48
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 3
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b66eba610f079d0800000000000000
+      internalID: -2778456989923644649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_49
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 3
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf1c07cb480c97d0800000000000000
+      internalID: -2910442137633153074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_50
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 3
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734e8a047088bca90800000000000000
+      internalID: -7292585606865427401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_51
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1
+        width: 5
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26587ddb3b23b7dd0800000000000000
+      internalID: -2487338621626514078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_52
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 3
+        width: 5
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb45544e83ffcc550800000000000000
+      internalID: 6182597008285848767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Boy_Advance_-_The_Legend_of_Zelda_The_Minish_Cap_-_Beetle-removebg_53
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 3
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabb097cfcb4717b0800000000000000
+      internalID: -5253647084525929553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: spider
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

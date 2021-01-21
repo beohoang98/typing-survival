@@ -1,0 +1,1274 @@
+fileFormatVersion: 2
+guid: f8bf5c6b476ae7c4e82b438b2fc3f59d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3132992398013478199
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_0
+  - first:
+      213: -3521590548253952777
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_1
+  - first:
+      213: -2758795955425585172
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_2
+  - first:
+      213: -5405363084612757829
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_3
+  - first:
+      213: -3501982137859180226
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_4
+  - first:
+      213: -8616646466084102597
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_5
+  - first:
+      213: -7222166798681023070
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_6
+  - first:
+      213: 2740212629682213776
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_7
+  - first:
+      213: 3037793569878179424
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_8
+  - first:
+      213: -5987913922746933596
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_9
+  - first:
+      213: 1013166889030634692
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_10
+  - first:
+      213: 6330768686369395888
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_11
+  - first:
+      213: -7776630627695956333
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_12
+  - first:
+      213: 9155158301006425911
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_13
+  - first:
+      213: -6876193952491495429
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_14
+  - first:
+      213: -8890794016558018228
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_15
+  - first:
+      213: 7078636234524564413
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_16
+  - first:
+      213: 455141509847651162
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_17
+  - first:
+      213: 3407540649537430066
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_18
+  - first:
+      213: 198915834959964792
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_19
+  - first:
+      213: -6446920560309376099
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_20
+  - first:
+      213: 3808197403299743899
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_21
+  - first:
+      213: 3836627450188589473
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_22
+  - first:
+      213: -4602390591227127740
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_23
+  - first:
+      213: 7580692038010585860
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_24
+  - first:
+      213: -2695555579820003147
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_25
+  - first:
+      213: 425140649361884495
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_26
+  - first:
+      213: 7506586374786720988
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_27
+  - first:
+      213: -7195332039858192659
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_28
+  - first:
+      213: 8854028678002337515
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_29
+  - first:
+      213: -7048863333213905475
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_30
+  - first:
+      213: 343764694261655681
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_31
+  - first:
+      213: -1991797426706671301
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_32
+  - first:
+      213: 9134025159870475848
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_33
+  - first:
+      213: 1356652978023879230
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_34
+  - first:
+      213: -3545390320123640486
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_35
+  - first:
+      213: -4168684138841376092
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_36
+  - first:
+      213: -8180504948681305810
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_37
+  - first:
+      213: 5873222324169143118
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_38
+  - first:
+      213: -5941561493130776882
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_39
+  - first:
+      213: 3737820370506627362
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_40
+  - first:
+      213: 4469826812140630570
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_41
+  - first:
+      213: -4634553497848737673
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_42
+  - first:
+      213: -5156681679997107433
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_43
+  - first:
+      213: -4401525379352948422
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_44
+  - first:
+      213: 7581888216693015376
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_45
+  - first:
+      213: -9168175484614044163
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_46
+  - first:
+      213: 6446205561617137510
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_47
+  - first:
+      213: -4669176214561500054
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_48
+  - first:
+      213: 5304946266051599007
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_49
+  - first:
+      213: 2961295601251721691
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_50
+  - first:
+      213: -3752113247520383426
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_51
+  - first:
+      213: -7909615600869566473
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_52
+  - first:
+      213: -2718814592901072822
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_53
+  - first:
+      213: 8688087680574135358
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_54
+  - first:
+      213: -7655252748523794954
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_55
+  - first:
+      213: 4507856919602044523
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_56
+  - first:
+      213: -7271695466091665293
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_57
+  - first:
+      213: -2293226197452086277
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_58
+  - first:
+      213: -4967949803489725295
+    second: Game Boy Advance - Riviera The Promised Land - Pelga_59
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 345
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca486863006584d0800000000000000
+      internalID: -3132992398013478199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 344
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f433f6fd0cc02fc0800000000000000
+      internalID: -3521590548253952777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 344
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7d21df1b9c6b9d0800000000000000
+      internalID: -2758795955425585172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_7
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 305
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0935f315ed0370620800000000000000
+      internalID: 2740212629682213776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_8
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 306
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06efd892829682a20800000000000000
+      internalID: 3037793569878179424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_9
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 306
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae9d093308a6eca0800000000000000
+      internalID: -5987913922746933596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 261
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cccbd6eaed7f0e00800000000000000
+      internalID: 1013166889030634692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_11
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 261
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4d63214986bd750800000000000000
+      internalID: 6330768686369395888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 219
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e62ce75abd31490800000000000000
+      internalID: -7776630627695956333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 219
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fe4f9f7f7ad0f70800000000000000
+      internalID: 9155158301006425911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_14
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 219
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff1e07280ad290a0800000000000000
+      internalID: -6876193952491495429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_15
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 215
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4114e782fd8d9480800000000000000
+      internalID: -8890794016558018228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_16
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 214
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb9b0da62e5c3260800000000000000
+      internalID: 7078636234524564413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_17
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 214
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a531101baccf05600800000000000000
+      internalID: 455141509847651162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_18
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 217
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232e165ba240a4f20800000000000000
+      internalID: 3407540649537430066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_19
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 171
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a2df2e5e0b2c200800000000000000
+      internalID: 198915834959964792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_20
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 174
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9be89b58efe786a0800000000000000
+      internalID: -6446920560309376099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_21
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 167
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b980f329c5f69d430800000000000000
+      internalID: 3808197403299743899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_22
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 175
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9e000b6507e3530800000000000000
+      internalID: 3836627450188589473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_23
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 171
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4489e4c44260120c0800000000000000
+      internalID: -4602390591227127740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_24
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 175
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403c04d8e37043960800000000000000
+      internalID: 7580692038010585860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_25
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 176
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0b1885b76779ad0800000000000000
+      internalID: -2695555579820003147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_26
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 173
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f454bc80b2766e500800000000000000
+      internalID: 425140649361884495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_27
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 173
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd423f84980cc2860800000000000000
+      internalID: 7506586374786720988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 170
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deef34bd1ab052c90800000000000000
+      internalID: -7195332039858192659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_29
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 172
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be663770c24dfda70800000000000000
+      internalID: 8854028678002337515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_30
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 168
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd528915286d2e90800000000000000
+      internalID: -7048863333213905475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_31
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 171
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18869c70b2c45c400800000000000000
+      internalID: 343764694261655681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_32
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 168
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b399c9c1bc6bb54e0800000000000000
+      internalID: -1991797426706671301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_33
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 169
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e6f8f1d7392ce70800000000000000
+      internalID: 9134025159870475848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_34
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 166
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32d69612bcc3d210800000000000000
+      internalID: 1356652978023879230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_35
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 167
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a550ce2c94e3ccec0800000000000000
+      internalID: -3545390320123640486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_36
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 163
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aafd83ccdbd526c0800000000000000
+      internalID: -4168684138841376092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_37
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 162
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2196826712097e80800000000000000
+      internalID: -8180504948681305810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_38
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 162
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43fefe0690e18150800000000000000
+      internalID: 5873222324169143118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_39
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 159
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eceecce3d455b8da0800000000000000
+      internalID: -5941561493130776882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_40
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 158
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229344ab2d76fd330800000000000000
+      internalID: 3737820370506627362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_41
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 95
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22b821bdc3080e30800000000000000
+      internalID: 4469826812140630570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_42
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 130
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7709e2c0622ceafb0800000000000000
+      internalID: -4634553497848737673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_43
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 96
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71302045559cf68b0800000000000000
+      internalID: -5156681679997107433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_44
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 138
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a311dcddcf3aae2c0800000000000000
+      internalID: -4401525379352948422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_45
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 108
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05305ba9927483960800000000000000
+      internalID: 7581888216693015376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_46
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 99
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df59229c8f814c080800000000000000
+      internalID: -9168175484614044163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_47
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 99
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f36590ec5857950800000000000000
+      internalID: 6446205561617137510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_48
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 92
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64db51a8f0c33fb0800000000000000
+      internalID: -4669176214561500054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Riviera The Promised Land - Pelga_49
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 99
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a5a8ca584fe9940800000000000000
+      internalID: 5304946266051599007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: bird_enemy
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

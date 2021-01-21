@@ -17,8 +17,12 @@ MonoBehaviour:
     sceneName: Level1
   - level: 2
     sceneName: Level2
+  - level: 3
+    sceneName: Level3
   levels:
   - level: 1
     scene: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
   - level: 2
     scene: {fileID: 102900000, guid: b37947aa84889f94da3d9477125b1d71, type: 3}
+  - level: 3
+    scene: {fileID: 102900000, guid: 4800dbacb622b2d4aab763e4cc00432a, type: 3}
