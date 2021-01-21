@@ -18,11 +18,12 @@ namespace Game.Scripts.Editor
 
         private void OnSceneGUI()
         {
+            float penSize = HandleUtility.GetHandleSize(spawner.transform.position) * 0.25f;
             Handles.CapFunction capFunction = Handles.SphereHandleCap;
             foreach (var index in Enumerable.Range(0, spawner.spawnPosition.Count))
             {
                 Vector2 newPos =
-                    Handles.FreeMoveHandle(spawner.spawnPosition[index], Quaternion.identity, 0.5f, Vector3.one,
+                    Handles.FreeMoveHandle(spawner.spawnPosition[index], Quaternion.identity, penSize, Vector3.one,
                         capFunction);
                 if (spawner.spawnPosition[index] != newPos)
                 {
