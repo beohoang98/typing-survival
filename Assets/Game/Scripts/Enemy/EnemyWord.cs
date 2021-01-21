@@ -40,7 +40,12 @@ namespace Game.Scripts.Enemy
             }
         }
 
-        public void GotKilled()
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            Debug.Log(LayerMask.LayerToName(other.collider.gameObject.layer), this);
+        }
+
+        private void GotKilled()
         {
             _manager.KillEnemy(_word);
             GameController.Instance.IncreaseScore(_points);

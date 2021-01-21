@@ -12,7 +12,8 @@ namespace Game.Scripts.Weapon
         private void Start()
         {
             _rigid = GetComponent<Rigidbody2D>();
-            StartCoroutine(DestroyedAfter(2));
+            // StartCoroutine(DestroyedAfter(2));
+            Destroy(gameObject, 2f);
         }
 
         private void Update()

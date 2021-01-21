@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 727700600}
   - component: {fileID: 727700601}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 1847551798535673332}
   - component: {fileID: 1596558951089977164}
   - component: {fileID: 3530897192691225195}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -170,9 +170,9 @@ MonoBehaviour:
   m_fontSizeMin: 6
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 514
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 4875207748595107083}
   - component: {fileID: 2152034948094794580}
   - component: {fileID: 2593031187326128969}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: -1932151129
+  m_SortingLayerID: 2111591059
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &2152034948094794580
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 8667408178222847536}
   - component: {fileID: 2000425549}
   - component: {fileID: 36920770}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8667408176930649653}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.4, y: 3.4, z: 0}
+  m_LocalPosition: {x: -3.83, y: 1.84, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 8326152860355261198}
@@ -405,8 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b770b893d23f4e7b94d740ee2c941019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigid: {fileID: 0}
-  playerController: {fileID: 0}
+  speed: 0.8
 --- !u!50 &1460510748
 Rigidbody2D:
   serializedVersion: 4
@@ -415,19 +414,19 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8667408176930649653}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
+  m_UseAutoMass: 1
+  m_Mass: 0.09359999
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: 7f722e829c3e59d4cbe0bc1b860cc352, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1460510749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,6 +440,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 3530897192691225195}
+  killedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!60 &8667408178222847536
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -466,14 +468,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.04587418, y: 0.071268246}
-      - {x: -0.070952915, y: 0.038033366}
-      - {x: -0.07365097, y: -0.041897655}
-      - {x: -0.042141505, y: -0.07399862}
-      - {x: 0.04325488, y: -0.07364959}
-      - {x: 0.07365097, y: -0.044917766}
-      - {x: 0.070476316, y: 0.0414233}
-      - {x: 0.05103168, y: 0.06888681}
+    - - {x: -0.06, y: 0.08}
+      - {x: -0.08, y: 0.07}
+      - {x: -0.08, y: 0.01}
+      - {x: -0.049999997, y: -0.08}
+      - {x: 0.049999997, y: -0.08}
+      - {x: 0.08, y: -0.03}
+      - {x: 0.08, y: 0.08}
 --- !u!95 &2000425549
 Animator:
   serializedVersion: 3
@@ -487,7 +488,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 6b9714b8de44d8946adee7bdd62f7a22, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -520,4 +521,4 @@ MonoBehaviour:
   - {x: -0.052641153, y: 0.046027333, z: 0}
   m_ShapePathHash: 125346829
   m_Mesh: {fileID: 0}
-  m_InstanceId: -6500
+  m_InstanceId: 44118
