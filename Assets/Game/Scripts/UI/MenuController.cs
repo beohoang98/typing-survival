@@ -1,7 +1,6 @@
 ﻿using DG.Tweening;
 using Game.Scripts.Config;
 using Game.Scripts.Game;
-using Game.Scripts.Saves;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -32,8 +31,8 @@ namespace Game.Scripts.UI
         [SerializeField] private Button settingBackButton;
 
         [Header("Play Menu")] [SerializeField] private GameObject playMenuUI;
-        [SerializeField] private Button continueButton;
-        [SerializeField] private Button newButton;
+        [SerializeField] private Button storyModeButton;
+        [SerializeField] private Button survivalModeButton;
         [SerializeField] private Button playBackButton;
 
 
@@ -54,13 +53,13 @@ namespace Game.Scripts.UI
             playButton.onClick.AddListener(Play);
             settingButton.onClick.AddListener(OpenSetting);
             // creditButton.onClick.AddListener();
-            quitButton.onClick.AddListener(Quit);
+            // quitButton.onClick.AddListener(Quit);
             displayDropdown.onValueChanged.AddListener(HandleResoChange);
             fullscreenToggle.onValueChanged.AddListener(HandleFullscreenChecked);
             settingBackButton.onClick.AddListener(BackMainMenu);
 
-            continueButton.onClick.AddListener(ContinuePressed);
-            newButton.onClick.AddListener(NewPressed);
+            storyModeButton.onClick.AddListener(StoryModePressed);
+            survivalModeButton.onClick.AddListener(SurvivalModePressed);
             playBackButton.onClick.AddListener(PlayMenuBackPressed);
 
             _escAction = inputActionAsset.FindAction("ESC");
@@ -73,11 +72,22 @@ namespace Game.Scripts.UI
             fullscreenToggle.isOn = _setting.Fullscreen;
 
             bool isMenuScene = SceneManager.GetActiveScene().name.Equals("Menu");
+
+            Text quitText = quitButton.GetComponentInChildren<Text>();
+            quitText.text = (isMenuScene ? "Quit" : "Back to menu");
+
             playButton.gameObject.SetActive(isMenuScene);
             wrapper.SetActive(isMenuScene);
             if (isMenuScene)
             {
                 EventSystem.current.SetSelectedGameObject(playButton.gameObject);
+                quitButton.onClick.RemoveAllListeners();
+                quitButton.onClick.AddListener(Quit);
+            }
+            else
+            {
+                quitButton.onClick.RemoveAllListeners();
+                quitButton.onClick.AddListener(BackToMenu);
             }
         }
 
@@ -122,7 +132,12 @@ namespace Game.Scripts.UI
             mainMenuUI.SetActive(false);
             playMenuUI.SetActive(true);
             await playMenuUI.transform.DOScale(Vector3.one, 0.2f).AsyncWaitForCompletion();
-            EventSystem.current.SetSelectedGameObject(continueButton.gameObject);
+            EventSystem.current.SetSelectedGameObject(storyModeButton.gameObject);
+        }
+
+        private void BackToMenu()
+        {
+            SceneManager.LoadScene("Menu");
         }
 
         void OpenSetting()
@@ -161,21 +176,22 @@ namespace Game.Scripts.UI
                 .OnComplete(() => settingUI.SetActive(false));
         }
 
-        private void ContinuePressed()
-        {
-            uint level = UserScore.instance.playingLevel;
-            SceneHolder.sceneIndex = levelConfig.GetSceneIndexOfLevel(level);
-            wrapper.SetActive(false);
-            wrapper.transform.localScale = Vector3.zero;
-            SceneManager.LoadScene("Scenes/Loading");
-        }
-
-        private void NewPressed()
+        private void StoryModePressed()
         {
             PlayMenuBackPressed();
             wrapper.SetActive(false);
             wrapper.transform.localScale = Vector3.zero;
             SceneManager.LoadScene("LevelChooser", LoadSceneMode.Single);
+        }
+
+        private void SurvivalModePressed()
+        {
+            PlayMenuBackPressed();
+            int sceneIndex = SceneUtility.GetBuildIndexByScenePath("Survival");
+            SceneHolder.sceneIndex = sceneIndex;
+            wrapper.SetActive(false);
+            wrapper.transform.localScale = Vector3.zero;
+            SceneManager.LoadScene("Scenes/Loading");
         }
 
         private async void PlayMenuBackPressed()
